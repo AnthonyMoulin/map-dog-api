@@ -1,0 +1,29 @@
+{
+	"name" : "map-dog/api",
+	"description" : "Map Dog API",
+	"keywords" : [
+		"map-dog",
+		"api"
+	],
+	"type" : "project",
+	"license" : "MIT",
+	"authors" : [
+	],
+	"minimum-stability" : "dev",
+	"require" : {
+		"php" : ">=7.0.1"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"MapDog\\" : "src/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"MapDog\\Test\\" : "test/"
+		}
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "dev-master"
+	}
+}
