@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE "dog" (
-  "id" int(10) UNSIGNED NOT NULL,
+  "id" int(10) NOT NULL,
   "name" char(32) NOT NULL,
   "avatar" char(32) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -48,7 +48,7 @@ INSERT INTO "dog" ("id", "name", "avatar") VALUES
 --
 
 CREATE TABLE "map" (
-  "id" int(10) UNSIGNED NOT NULL,
+  "id" int(10) NOT NULL,
   "lat" float NOT NULL DEFAULT '0',
   "lng"  float NOT NULL DEFAULT '0',
   "time" int(11) NOT NULL
@@ -72,7 +72,7 @@ INSERT INTO "map" ("id", "lat", "lng", "time") VALUES
 --
 ALTER TABLE "dog"
   ADD PRIMARY KEY ("id"),
-  ADD UNIQUE KEY "name" ("name");
+  ADD UNIQUE KEY ("name");
 
 --
 -- Index pour la table "map"
